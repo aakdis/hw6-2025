@@ -11,6 +11,10 @@ window.addEventListener("load", function() {
 
 //Part 2
 document.querySelector("#play").addEventListener("click", function() {
+	console.log("Play Video");
+});
+
+document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play video");
 	document.querySelector("#volume").innerHTML = video.volume * 100 + '%';
 	video.play();
@@ -81,8 +85,3 @@ document.querySelector("#orig").addEventListener("click", function() {
 	video.classList.remove("oldSchool");
 	console.log("back to original");
 })
-
-// document.querySelector("#play").addEventListener("click", function() {
-// 	console.log("Play Video");
-// });
-
