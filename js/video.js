@@ -6,14 +6,12 @@ window.addEventListener("load", function() {
 	video = document.querySelector("#player1");
 	console.log(video);
 	video.autoplay = false;
+	console.log('auto play is set to '+ video.autoplay);
 	video.loop = false;
+	console.log('video looping is set to' +video.loop);
 });
 
 //Part 2
-document.querySelector("#play").addEventListener("click", function() {
-	console.log("Play Video");
-});
-
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play video");
 	document.querySelector("#volume").innerHTML = video.volume * 100 + '%';
